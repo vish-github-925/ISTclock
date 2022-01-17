@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(94, 94, 165);
+}
+h1 {
+  font-size: 50px;
+}
+.navbar {
+  display: flex;
+  height: 5vh;
+}
+.navbar .logo {
+  width: 100%;
+  padding: 10px;
+}
+.navbar .logo a {
+  color: white;
+  padding: 0;
+  opacity: 0.5;
+  margin-left: 8px;
+}
+
+.container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+.container h1 {
+  padding: 5px;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 10px;
+  opacity: 0.5;
+}
+footer h3 {
+  padding-left: 20px;
+}
+footer span {
+  font-size: 10px;
+}
+footer a i {
+  padding: 5px;
+  color: white;
+}
+.fa-mobile-alt {
+  margin-right: 20px;
+}
+a:hover,
+footer h3 a:hover {
+  animation: animate1 1s forwards;
+}
+@keyframes animate1 {
+  to {
+    opacity: 1;
+  }
+}
