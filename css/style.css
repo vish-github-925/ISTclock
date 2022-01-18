@@ -10,6 +10,13 @@ body {
 h1 {
   font-size: 50px;
 }
+.none {
+  visibility: hidden;
+}
+#meridian {
+  margin-top: 30px;
+  font-size: 2rem;
+}
 .navbar {
   display: flex;
   height: 5vh;
@@ -33,8 +40,31 @@ h1 {
   align-items: center;
   color: white;
 }
+.container .date,
+.container .time {
+  padding: 20px;
+  /* background: rgba(68, 38, 216, 0.288); */
+  padding: 40px 20px;
+  border-radius: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .date i,
+.container .time i {
+  font-size: 20px;
+  opacity: 0.5;
+}
+a:hover,
+i:hover {
+  cursor: pointer;
+  animation: animate1 0.5s forwards;
+}
 .container h1 {
   padding: 5px;
+  opacity: 0.9;
+  text-shadow: 2px 2px 1px black;
 }
 @media (max-width: 500px) {
   h1 {
@@ -46,7 +76,6 @@ footer {
   justify-content: space-between;
   color: white;
   font-size: 10px;
-  opacity: 0.5;
 }
 footer h3 {
   padding-left: 20px;
@@ -54,16 +83,27 @@ footer h3 {
 footer span {
   font-size: 10px;
 }
-footer a i {
-  padding: 5px;
+footer .cpw,
+footer .rr,
+footer .contact h3 {
+  opacity: 0.5;
+}
+footer .contact a {
+  opacity: 0.5;
+}
+footer .contact {
+  display: flex;
+}
+footer .contact a {
+  padding: 1px 5px;
   color: white;
 }
 .fa-mobile-alt {
   margin-right: 20px;
 }
 a:hover,
-footer h3 a:hover {
-  animation: animate1 1s forwards;
+footer h3 a i:hover {
+  animation: animate1 0.5s forwards;
 }
 @keyframes animate1 {
   to {
