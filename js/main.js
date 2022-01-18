@@ -44,7 +44,7 @@ function showTime() {
     default:
       month = "Dec";
   }
-  meridian = hour < 13 ? meridian : "PM";
+  meridian = hour < 12 ? meridian : "PM";
   minutes = minutes < 10 ? "0" + minutes : minutes;
   seconds = seconds < 10 ? "0" + seconds : seconds;
   hour = hour < 13 ? hour : hour - 12;
